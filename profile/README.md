@@ -1,39 +1,44 @@
 ![Panda CMS](https://github.com/pandacms/.github/blob/main/images/panda-transparent-small.png?raw=true)
 
-# Panda is the CMS we always wanted. ✨ 
+# Panda CMS – Better websites, on Rails. 🐼
 
-Better websites, on Rails.
+A modern, modular content management system built for Ruby on Rails. In production since March 2024.
 
-We're building a CMS for 2024, with the modern technologies we love:
+**[Website](https://tastybamboo.net)** · **[Pro Features](https://tastybamboo.net/pro.html)** · **[Managed Hosting](https://tastybamboo.net/hosting.html)**
 
-* Ruby on Rails 7+, with ViewComponents
-* Tailwind CSS
-* One-Click Deploys
+![Gem Version](https://img.shields.io/gem/v/panda-cms) ![Build Status](https://img.shields.io/github/actions/workflow/status/tastybamboo/panda-cms/ci.yml)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/tastybamboo/panda-cms) [![Ruby Code Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/standardrb/standard)
 
-🐼 is grown from our work at [Otaina](https://www.otaina.co.uk), a small group of freelancers. We needed something that could handle websites large and small – but where we could expand it too. We sent our first websites live in March 2024, and this is now the first project from our spin-off, Tasty Bamboo.
+## The Ecosystem
 
-We're building Panda in public. We welcome people who want to try it out, ideas, and contributions. In return, we'll try build something great – and remember, Matz is nice and so we are nice. 😊
+| Gem | Description | Status |
+|-----|-------------|--------|
+| [panda-core](https://github.com/tastybamboo/panda-core) | Shared foundation: OAuth auth, user management, configuration | Open Source |
+| [panda-cms](https://github.com/tastybamboo/panda-cms) | Core CMS: pages, posts, templates, menus, forms, SEO | Open Source |
+| [panda-editor](https://github.com/tastybamboo/panda-editor) | EditorJS-based block editor with footnotes, HTML/Markdown import | Open Source |
+| [panda-cms-pro](https://github.com/tastybamboo/panda-cms-pro) | Collections, versioning, RBAC, REST API, content sync | Pro (£120/yr) |
+| [panda-helpdesk](https://github.com/tastybamboo/panda-helpdesk) | Ticketing, departments, customer portal, SLA tracking | Pro (included) |
+| [sent_emails](https://github.com/tastybamboo/sent_emails) | Email capture, delivery tracking, admin UI, resend | Open Source |
 
-![Gem Version](https://img.shields.io/gem/v/panda_cms) ![Build Status](https://img.shields.io/github/actions/workflow/status/pandacms/panda_cms/ci.yml)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/pandacms/panda_cms) [![Ruby Code Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/standardrb/standard)
+## Quick Start
 
-Here's our initial roadmap:
+```bash
+bundle add panda-cms
+rails generate panda:cms:install
+rails db:migrate
+rails server
+```
 
-* 🟢 Quick installation and upgrades: install a Ruby gem and get going.
-* 🟢 Page management
-* 🟠 Customisable rich text editor
-* 🟢 Menu management
-* 🟠 File management
-* 🟠 Analytics
-* 🔴 User management
-* 🟢 Quick deployment
-* 🟠 Documentation
+Visit `/admin` to start managing content.
 
-We're expecting a "Pro" version will incorporate membership and community features. We'll offer a paid license for this. Hosting services, and pre-made themes, might join as additional services one day.
+## Free vs Pro
 
-Panda is licensed under a BSD-3-Clause license. 
+The free tier includes pages, posts, templates, menus, forms, SEO, file management, and a modern block editor — features that competing CMS platforms charge hundreds of dollars for.
+
+**Pro** adds collections, versioning, RBAC, REST API, content sync, website users, and a full helpdesk with ticketing — all for £120/yr per production site (inc. VAT).
+
+## About
+
+Panda CMS is lovingly maintained by [Otaina Limited](https://www.otaina.co.uk). Licensed under the [BSD-3-Clause License](https://opensource.org/licenses/bsd-3-clause).
 
 Pandas fall over and eat a lot. So do we. 🐼
-
-With <3,
-The folks at Tasty Bamboo
